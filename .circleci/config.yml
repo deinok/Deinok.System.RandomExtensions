@@ -1,0 +1,35 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/Deinok.System.RandomExtensions/
+    docker:
+      - image: microsoft/dotnet:1.1-sdk
+    environment:
+      NUGET_SOURCE: https://api.nuget.org/v3/index.json
+      MY_GET_SOURCE: https://www.myget.org/F/deinok-system-randomextensions/api/v3/index.json
+    steps:
+      - checkout
+      
+      # Restore-Build
+      - restore_cache:
+          key: NUGET
+      - run: 
+          name: Clean
+          command: dotnet clean
+      - run: 
+          name: Restore
+          command: dotnet restore
+      - run:
+          name: Build
+          command: dotnet build
+      - save_cache:
+          key: NUGET
+          paths:
+            - ~/.nuget/
+          
+      - deploy:
+          name: MyGet
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              dotnet nuget push ./src/Deinok.System.RandomExtensions/bin/Debug/Deinok.System.RandomExtensions.1.0.0.nupkg --api-key $MY_GET_API_KEY --source $MY_GET_SOURCE
+            fi
