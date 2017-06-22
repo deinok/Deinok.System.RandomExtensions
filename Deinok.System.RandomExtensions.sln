@@ -6,11 +6,15 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Deinok.System.RandomExtensions", "src\Deinok.System.RandomExtensions\Deinok.System.RandomExtensions.csproj", "{E880F1A5-EB4E-43A3-9E8E-90096DEA738A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{71052EA1-A51A-4769-B5AC-11D50CC71208}"
+	ProjectSection(SolutionItems) = preProject
+		src\Src.props = src\Src.props
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{44616254-D7BC-47D5-AFD0-596EC9A7CC6A}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		.gitignore = .gitignore
+		Deinok.System.RandomExtensions.props = Deinok.System.RandomExtensions.props
 	EndProjectSection
 EndProject
 Global
