@@ -13,8 +13,6 @@
 			return random.Next() % 2 == 0;
 		}
 
-
-
 	}
 
 }
