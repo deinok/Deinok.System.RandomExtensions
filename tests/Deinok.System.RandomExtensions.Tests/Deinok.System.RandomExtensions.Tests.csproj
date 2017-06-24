@@ -5,5 +5,13 @@
 	<PropertyGroup>
 		<TargetFramework>netcoreapp1.1</TargetFramework>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\src\Deinok.System.RandomExtensions\Deinok.System.RandomExtensions.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
+	</ItemGroup>
 	
 </Project>

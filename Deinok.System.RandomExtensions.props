@@ -7,7 +7,7 @@
 		<LangVersion>7</LangVersion>
 		<NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
 		<NeutralLanguage>en</NeutralLanguage>
-		<NoWarn></NoWarn>
+		<NoWarn>CS1701</NoWarn>
 		<PackageLicenseUrl>https://raw.githubusercontent.com/deinok/Deinok.System.RandomExtensions/master/LICENSE.txt</PackageLicenseUrl>
 		<PackageProjectUrl>https://github.com/deinok/Deinok.System.RandomExtensions</PackageProjectUrl>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
