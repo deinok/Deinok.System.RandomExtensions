@@ -8,6 +8,12 @@
 			return bytes[0];
 		}
 
+		public static byte[] NextBytes(this Random random,int length){
+			byte[] bytes = new byte[length];
+			random.NextBytes(bytes);
+			return bytes;
+		}
+
 	}
 
 }

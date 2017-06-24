@@ -8,8 +8,8 @@ namespace Deinok.System.RandomExtensions.Tests {
 	public class RandomBoolExtensionTest:BaseRandomTest{
 
         [Fact]
-        public void Test1() {
-			this.Random.NextBool();
+        public void NextBoolTest() {
+			Assert.IsType<bool>(this.Random.NextBool());
         }
 
 		[Fact]
