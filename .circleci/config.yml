@@ -26,7 +26,10 @@ jobs:
           key: NUGET
           paths:
             - ~/.nuget/
-          
+      - run:
+          name: Test
+          command: dotnet test
+          working_directory: ./tests/Deinok.System.RandomExtensions.Tests/
       - deploy:
           name: MyGet
           command: |
