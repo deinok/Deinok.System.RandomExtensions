@@ -4,6 +4,7 @@
 	<PropertyGroup>
 		<Authors>Deinok</Authors>
 		<GenerateAssemblyInfo>True</GenerateAssemblyInfo>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<LangVersion>7</LangVersion>
 		<NetStandardImplicitPackageVersion>1.6.1</NetStandardImplicitPackageVersion>
 		<NeutralLanguage>en</NeutralLanguage>
