@@ -19,7 +19,7 @@ namespace Deinok.System.RandomExtensions.Tests {
 			int maxTrues = (numberElements * maxPercentage) / 100;
 			int minPercentage = 40;
 			int minTrues = (numberElements * minPercentage) / 100;
-			var numberTrues =this.GenerateRandomBools().Take(numberElements).Count(boolVal=>boolVal);
+			int numberTrues =this.GenerateRandomBools().Take(numberElements).Count(boolVal=>boolVal);
 			Assert.True(numberTrues <= maxTrues && numberTrues >= minTrues);
 		}
 
