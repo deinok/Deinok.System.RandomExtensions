@@ -1,5 +1,8 @@
 ﻿namespace System {
 
+	/// <summary>
+	/// An extension to random to generate bytes
+	/// </summary>
 	public static class RandomByteExtension {
 
 		/// <summary>
