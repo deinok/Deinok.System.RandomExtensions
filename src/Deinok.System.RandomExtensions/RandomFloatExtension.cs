@@ -29,9 +29,7 @@
 		/// <param name="minValue">The minimum value</param>
 		/// <param name="maxValue">The maximum value</param>
 		/// <returns></returns>
-		public static float NextFloat(this Random random, float minValue, float maxValue){
-			return (float)random.NextDouble(minValue, maxValue);
-		}
+		public static float NextFloat(this Random random, float minValue, float maxValue)=> (float)random.NextDouble(minValue, maxValue);
 
 	}
 

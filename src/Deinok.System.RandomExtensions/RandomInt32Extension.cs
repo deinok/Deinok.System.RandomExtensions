@@ -27,10 +27,7 @@
 		/// <param name="minValue">The minimum value</param>
 		/// <param name="maxValue">The maximum value</param>
 		/// <returns>A random Int32</returns>
-		public static Int32 NextInt32(this Random random, Int32 minValue, Int32 maxValue){
-			int longRand = BitConverter.ToInt32(random.NextBytes(4), 0);
-			return Math.Abs(longRand % (maxValue - minValue)) + minValue;
-		}
+		public static Int32 NextInt32(this Random random, Int32 minValue, Int32 maxValue) => (Int32)random.NextInt64(minValue, maxValue);
 
 	}
 
