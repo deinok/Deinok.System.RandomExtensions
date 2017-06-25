@@ -26,7 +26,7 @@ namespace Deinok.System.RandomExtensions.Tests {
 		/// </summary>
 		[Fact]
 		public void NextCharAsciiTest(){
-			this.GenerateRandomCharAscii().Take(10000).ToList().ForEach(character => {
+			this.GenerateRandomCharAscii().Take(10000).ToList().ForEach(character => {	 
 				Assert.IsType<char>(character);
 				Assert.True(character >= 0 && character <= 127);
 			});
