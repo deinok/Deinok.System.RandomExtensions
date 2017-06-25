@@ -10,11 +10,7 @@
 		/// </summary>
 		/// <param name="random"></param>
 		/// <returns>A random byte</returns>
-		public static byte NextByte(this Random random){
-			byte[] bytes = new byte[1];
-			random.NextBytes(bytes);
-			return bytes[0];
-		}
+		public static byte NextByte(this Random random)=>random.NextBytes(1)[0];
 
 		/// <summary>
 		/// Get a random byte array
