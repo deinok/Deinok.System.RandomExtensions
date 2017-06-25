@@ -23,6 +23,15 @@
 			return (char)random.NextUInt16(127);
 		}
 
+		/// <summary>
+		/// Get a random printable ASCII char
+		/// </summary>
+		/// <param name="random"></param>
+		/// <returns>A random printable ASCII char</returns>
+		public static char NextCharPrintableAscii(this Random random){
+			return (char)random.NextUInt16(32,126);
+		}
+
 	}
 
 }
