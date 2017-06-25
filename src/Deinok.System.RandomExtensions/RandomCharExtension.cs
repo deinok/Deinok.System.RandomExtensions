@@ -1,4 +1,7 @@
-﻿namespace System {
+﻿using System.Collections.Generic;
+using System.Linq;
+
+namespace System {
 
 	/// <summary>
 	/// An extension to random to generate chars
@@ -12,6 +15,17 @@
 		/// <returns>A random char</returns>
 		public static char NextChar(this Random random){
 			return (char)random.NextUInt32(char.MaxValue);
+		}
+
+		/// <summary>
+		/// Get a random char
+		/// </summary>
+		/// <param name="random"></param>
+		/// <param name="chars">Available chars</param>
+		/// <returns>A random char</returns>
+		public static char NextChar(this Random random,IEnumerable<char> chars){
+			chars = chars.Distinct();
+			return chars.ElementAt(random.NextInt32(chars.Count()));
 		}
 
 		/// <summary>
