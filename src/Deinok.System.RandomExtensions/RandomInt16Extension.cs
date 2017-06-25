@@ -27,7 +27,7 @@
 		/// <param name="minValue">The minimum value</param>
 		/// <param name="maxValue">The maximum value</param>
 		/// <returns>A random Int16</returns>
-		public static Int16 NextInt16(this Random random, Int16 minValue, Int16 maxValue)=>(Int16)random.NextInt32(minValue,maxValue)
+		public static Int16 NextInt16(this Random random, Int16 minValue, Int16 maxValue) => (Int16)random.NextInt32(minValue, maxValue);
 
 	}
 

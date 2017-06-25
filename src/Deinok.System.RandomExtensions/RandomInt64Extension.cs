@@ -29,7 +29,7 @@
 		/// <returns>A random Int64</returns>
 		public static Int64 NextInt64(this Random random, Int64 minValue, Int64 maxValue){
 			long longRand = BitConverter.ToInt64(random.NextBytes(8), 0);
-			return (Math.Abs(longRand % (maxValue - minValue)) + minValue);
+			return Math.Abs(longRand % (maxValue - minValue)) + minValue;
 		}
 
 	}
