@@ -11,8 +11,16 @@
 		/// <param name="random"></param>
 		/// <returns>A random char</returns>
 		public static char NextChar(this Random random){
-			string chars = "$%#@!*abcdefghijklmnopqrstuvwxyz1234567890?;:ABCDEFGHIJKLMNOPQRSTUVWXYZ^&";
-			return chars[random.Next(chars.Length - 1)];
+			return (char)random.NextUInt32(char.MaxValue);
+		}
+
+		/// <summary>
+		/// Get a random ASCII char
+		/// </summary>
+		/// <param name="random"></param>
+		/// <returns>A random ASCII char</returns>
+		public static char NextCharAscii(this Random random){
+			return (char)random.NextUInt16(127);
 		}
 
 	}
