@@ -4,9 +4,6 @@ jobs:
     working_directory: ~/Deinok.System.RandomExtensions/
     docker:
       - image: microsoft/dotnet:1.1-sdk
-    environment:
-      NUGET_SOURCE: https://api.nuget.org/v3/index.json
-      MY_GET_SOURCE: https://www.myget.org/F/deinok-system-randomextensions/api/v3/index.json
     steps:
       - checkout
       
@@ -30,9 +27,3 @@ jobs:
           name: Test
           command: dotnet test
           working_directory: ./tests/Deinok.System.RandomExtensions.Tests/
-      - deploy:
-          name: MyGet
-          command: |
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              dotnet nuget push ./src/Deinok.System.RandomExtensions/bin/Debug/Deinok.System.RandomExtensions.1.0.0.nupkg --api-key $MY_GET_API_KEY --source $MY_GET_SOURCE
-            fi
