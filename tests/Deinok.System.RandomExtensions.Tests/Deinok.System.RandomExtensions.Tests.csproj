@@ -2,10 +2,6 @@
 
 	<Import Project="../Tests.props" />
 
-	<PropertyGroup>
-		<TargetFramework>netcoreapp1.1</TargetFramework>
-	</PropertyGroup>
-
 	<ItemGroup>
 	  <ProjectReference Include="..\..\src\Deinok.System.RandomExtensions\Deinok.System.RandomExtensions.csproj" />
 	</ItemGroup>

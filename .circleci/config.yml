@@ -3,27 +3,18 @@ jobs:
   build:
     working_directory: ~/Deinok.System.RandomExtensions/
     docker:
-      - image: microsoft/dotnet:1.1-sdk
+      - image: microsoft/dotnet:2.0-sdk
     steps:
       - checkout
       
       # Restore-Build
       - restore_cache:
           key: NUGET
-      - run: 
-          name: Clean
-          command: dotnet clean
-      - run: 
-          name: Restore
-          command: dotnet restore
-      - run:
-          name: Build
-          command: dotnet build
-      - save_cache:
-          key: NUGET
-          paths:
-            - ~/.nuget/
       - run:
           name: Test
           command: dotnet test
           working_directory: ./tests/Deinok.System.RandomExtensions.Tests/
+      - save_cache:
+          key: NUGET
+          paths:
+            - ~/.nuget/
