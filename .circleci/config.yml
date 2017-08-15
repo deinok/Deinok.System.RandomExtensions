@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       
-      # Restore-Build
+      # Test
       - restore_cache:
           key: NUGET
       - run:
