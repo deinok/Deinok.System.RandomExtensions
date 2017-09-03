@@ -10,7 +10,7 @@
 		/// </summary>
 		/// <param name="random"></param>
 		/// <returns>A random bool</returns>
-		public static bool NextBool(this Random random){
+		public static bool NextBool(this Random random) {
 			return random.Next() % 2 == 0;
 		}
 

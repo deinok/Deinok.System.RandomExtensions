@@ -13,7 +13,7 @@ namespace System {
 		/// </summary>
 		/// <param name="random"></param>
 		/// <returns>A random char</returns>
-		public static char NextChar(this Random random){
+		public static char NextChar(this Random random) {
 			return (char)random.NextUInt32(char.MaxValue);
 		}
 
@@ -23,7 +23,7 @@ namespace System {
 		/// <param name="random"></param>
 		/// <param name="chars">Available chars</param>
 		/// <returns>A random char</returns>
-		public static char NextChar(this Random random,IEnumerable<char> chars){
+		public static char NextChar(this Random random, IEnumerable<char> chars) {
 			chars = chars.Distinct();
 			return chars.ElementAt(random.NextInt32(chars.Count()));
 		}
@@ -33,7 +33,7 @@ namespace System {
 		/// </summary>
 		/// <param name="random"></param>
 		/// <returns>A random ASCII char</returns>
-		public static char NextCharAscii(this Random random){
+		public static char NextCharAscii(this Random random) {
 			return (char)random.NextUInt16(127);
 		}
 
@@ -42,8 +42,8 @@ namespace System {
 		/// </summary>
 		/// <param name="random"></param>
 		/// <returns>A random printable ASCII char</returns>
-		public static char NextCharPrintableAscii(this Random random){
-			return (char)random.NextUInt16(32,126);
+		public static char NextCharPrintableAscii(this Random random) {
+			return (char)random.NextUInt16(32, 126);
 		}
 
 	}

@@ -14,7 +14,7 @@ namespace System {
 		/// <param name="random"></param>
 		/// <param name="length">The length of the string</param>
 		/// <returns>A random string</returns>
-		public static string NextString(this Random random,int length){
+		public static string NextString(this Random random, int length) {
 			return new string(new char[length]
 				.Select(selector => random.NextChar())
 				.ToArray()
@@ -28,7 +28,7 @@ namespace System {
 		/// <param name="length">The length of the string</param>
 		/// <param name="chars">Available chars</param>
 		/// <returns>A random string</returns>
-		public static string NextString(this Random random,int length,IEnumerable<char> chars){
+		public static string NextString(this Random random, int length, IEnumerable<char> chars) {
 			return new string(new char[length]
 				.Select(selector => random.NextChar(chars))
 				.ToArray()
@@ -41,7 +41,7 @@ namespace System {
 		/// <param name="random"></param>
 		/// <param name="length">The length of the string</param>
 		/// <returns>A random ASCII string</returns>
-		public static string NextStringAscii(this Random random,int length){
+		public static string NextStringAscii(this Random random, int length) {
 			return new string(new char[length]
 				.Select(selector => random.NextCharAscii())
 				.ToArray()
@@ -54,7 +54,7 @@ namespace System {
 		/// <param name="random"></param>
 		/// <param name="length">The length of the string</param>
 		/// <returns>A random printable ASCII string</returns>
-		public static string NextStringPrintableAscii(this Random random,int length){
+		public static string NextStringPrintableAscii(this Random random, int length) {
 			return new string(new char[length]
 				.Select(selector => random.NextCharPrintableAscii())
 				.ToArray()

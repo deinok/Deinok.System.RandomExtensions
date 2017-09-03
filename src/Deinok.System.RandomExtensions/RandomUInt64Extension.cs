@@ -3,7 +3,7 @@
 	/// <summary>
 	/// An extension to Random to generate UInt64s
 	/// </summary>
-	public static class RandomUInt64Extension{
+	public static class RandomUInt64Extension {
 
 		/// <summary>
 		/// Get a random UInt64
@@ -27,7 +27,7 @@
 		/// <param name="minValue">The minimum value</param>
 		/// <param name="maxValue">The maximum value</param>
 		/// <returns>A random UInt64</returns>
-		public static UInt64 NextUInt64(this Random random, UInt64 minValue, UInt64 maxValue){
+		public static UInt64 NextUInt64(this Random random, UInt64 minValue, UInt64 maxValue) {
 			UInt64 ulongRand = BitConverter.ToUInt64(random.NextBytes(8), 0);
 			return ulongRand % (maxValue - minValue) + minValue;
 		}

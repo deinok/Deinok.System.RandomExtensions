@@ -3,16 +3,17 @@
 
 	<PropertyGroup>
 		<Authors>Deinok</Authors>
+		<Description>Extensions for Random</Description>
 		<GenerateAssemblyInfo>True</GenerateAssemblyInfo>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<LangVersion>7</LangVersion>
 		<NeutralLanguage>en</NeutralLanguage>
-		<NoWarn>CS1701</NoWarn>
 		<PackageLicenseUrl>https://raw.githubusercontent.com/deinok/Deinok.System.RandomExtensions/master/LICENSE.txt</PackageLicenseUrl>
 		<PackageProjectUrl>https://github.com/deinok/Deinok.System.RandomExtensions</PackageProjectUrl>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<RepositoryUrl>git@github.com:deinok/Deinok.System.RandomExtensions.git</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
+		<Title>Random Extensions</Title>
 		<TreatWarningsAsErrors>True</TreatWarningsAsErrors>
 		<VersionPrefix>1.1.0</VersionPrefix>
 		<WarningLevel>4</WarningLevel>
@@ -25,5 +26,5 @@
 	<PropertyGroup Condition="'$(Configuration)'=='Debug'">
 		<Optimize>False</Optimize>
 	</PropertyGroup>
-	
+
 </Project>

@@ -20,8 +20,8 @@
 		/// <param name="minValue">The minimum value</param>
 		/// <param name="maxValue">The maximum value</param>
 		/// <returns>A random decimal</returns>
-		public static decimal NextDecimal(this Random random, decimal minValue, decimal maxValue){
-			return (decimal) random.NextDouble((double)minValue,(double)maxValue);
+		public static decimal NextDecimal(this Random random, decimal minValue, decimal maxValue) {
+			return (decimal)random.NextDouble((double)minValue, (double)maxValue);
 		}
 
 	}

@@ -3,7 +3,7 @@
 	/// <summary>
 	/// An extension to Random to generate IntPtrs
 	/// </summary>
-	public static class RandomIntPtrExtension{
+	public static class RandomIntPtrExtension {
 
 		/// <summary>
 		/// Get a random IntPtr
@@ -27,8 +27,8 @@
 		/// <param name="minValue">The minimum value</param>
 		/// <param name="maxValue">The maximum value</param>
 		/// <returns>A random IntPtr</returns>
-		public static IntPtr NextIntPtr(this Random random, IntPtr minValue, IntPtr maxValue){
-			return new IntPtr(random.NextInt64(minValue.ToInt64(),maxValue.ToInt64()));
+		public static IntPtr NextIntPtr(this Random random, IntPtr minValue, IntPtr maxValue) {
+			return new IntPtr(random.NextInt64(minValue.ToInt64(), maxValue.ToInt64()));
 		}
 
 	}

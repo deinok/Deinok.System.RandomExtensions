@@ -11,9 +11,9 @@
 		/// <typeparam name="E">The enum type</typeparam>
 		/// <param name="random"></param>
 		/// <returns>A random enum</returns>
-		public static E NextEnum<E>(this Random random){
+		public static E NextEnum<E>(this Random random) {
 			Array values = Enum.GetValues(typeof(E));
-			return (E) values.GetValue(random.Next(values.Length));
+			return (E)values.GetValue(random.Next(values.Length));
 		}
 
 	}

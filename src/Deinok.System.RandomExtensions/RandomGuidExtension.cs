@@ -10,7 +10,7 @@
 		/// </summary>
 		/// <param name="random"></param>
 		/// <returns>A random Guid</returns>
-		public static Guid NextGuid(this Random random){
+		public static Guid NextGuid(this Random random) {
 			return Guid.NewGuid();
 		}
 

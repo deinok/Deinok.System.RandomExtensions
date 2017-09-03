@@ -3,7 +3,7 @@
 	/// <summary>
 	/// An extension to Random to generate Int16s
 	/// </summary>
-	public static class RandomInt16Extension{
+	public static class RandomInt16Extension {
 
 		/// <summary>
 		/// Get a random Int16

@@ -3,7 +3,7 @@
 	/// <summary>
 	/// An extension to Random to generate SBytes
 	/// </summary>
-	public static class RandomSByteExtension{
+	public static class RandomSByteExtension {
 
 		/// <summary>
 		/// Get a random SByte

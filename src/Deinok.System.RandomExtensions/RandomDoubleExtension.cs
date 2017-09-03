@@ -20,7 +20,7 @@
 		/// <param name="minValue">The minimum value</param>
 		/// <param name="maxValue">The maximum value</param>
 		/// <returns>A random double</returns>
-		public static double NextDouble(this Random random, double minValue, double maxValue){
+		public static double NextDouble(this Random random, double minValue, double maxValue) {
 			return random.NextDouble() * (maxValue - minValue) + maxValue;
 		}
 
