@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Deinok.System.RandomExtensions", "src\Deinok.System.RandomExtensions\Deinok.System.RandomExtensions.csproj", "{E880F1A5-EB4E-43A3-9E8E-90096DEA738A}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{71052EA1-A51A-4769-B5AC-11D50CC71208}"
 	ProjectSection(SolutionItems) = preProject
 		src\Src.props = src\Src.props
@@ -21,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B387588C
 	ProjectSection(SolutionItems) = preProject
 		tests\Tests.props = tests\Tests.props
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Deinok.System.RandomExtensions", "src\Deinok.System.RandomExtensions\Deinok.System.RandomExtensions.csproj", "{E880F1A5-EB4E-43A3-9E8E-90096DEA738A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deinok.System.RandomExtensions.Tests", "tests\Deinok.System.RandomExtensions.Tests\Deinok.System.RandomExtensions.Tests.csproj", "{0F2C6165-7121-46E9-B660-110342EF82F3}"
 EndProject
@@ -45,5 +45,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{E880F1A5-EB4E-43A3-9E8E-90096DEA738A} = {71052EA1-A51A-4769-B5AC-11D50CC71208}
 		{0F2C6165-7121-46E9-B660-110342EF82F3} = {B387588C-5407-4507-B622-31DA8F7F00BF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9DFB6EC-EDC4-416B-858D-0B2FED86B396}
 	EndGlobalSection
 EndGlobal

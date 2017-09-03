@@ -57,16 +57,6 @@ insert_final_newline = true
 tab_width = 4
 trim_trailing_whitespace = true
 
-[*.cshtml]
-indent_size = 4
-indent_style = tab
-tab_width = 4
-
-[*.csproj]
-indent_size = 4
-indent_style = tab
-tab_width = 4
-
 [*.java]
 indent_size = 4
 indent_style = tab
@@ -81,11 +71,6 @@ indent_size = 2
 indent_style = tab
 tab_width = 4
 
-[*.html]
-indent_size = 4
-indent_style = tab
-tab_width = 4
-
 [*.props]
 indent_size = 4
 indent_style = tab
@@ -97,28 +82,14 @@ indent_size = 4
 indent_style = tab
 tab_width = 4
 
-[*.svg]
-indent_size = 2
-indent_style = tab
-tab_width = 4
-
 [*.ts]
 indent_size = 2
 indent_style = tab
 tab_width = 4
 
-[*.xaml]
+### XML ###
+[*.{axml,cshtml,csproj,html,svg,xaml,xhtml,xml}]
 indent_size = 4
-indent_style = tab
-tab_width = 4
-
-[*.xhtml]
-indent_size = 2
-indent_style = tab
-tab_width = 4
-
-[*.xml]
-indent_size = 2
 indent_style = tab
 tab_width = 4
 
